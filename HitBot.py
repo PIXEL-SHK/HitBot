@@ -26,6 +26,7 @@ async def 명령어(ctx):
     embed.add_field(name='시간', value='!시간 - 현재 시간을 알려줍니다.(한국 기준)', inline=False)
     embed.add_field(name='날짜', value='!날짜 - 오늘 날짜를 알려줍니다.(한국 기준)', inline=False)
     embed.add_field(name='당근', value='!당근 - 귀여운 당근을 보여줍니다:carrot::carrot::carrot:', inline=False)
+    embed.add_field(name='서버', value='!서버 - 히트봇 공식 디스코드 서버 초대 링크를 보내줍니다.', inline=False)
     await ctx.send(embed=embed)
 @bot.event
 async def on_ready():
@@ -90,6 +91,9 @@ async def 시간(ctx):
         now.minute,
         now.second
     ))
+@bot.command()
+async def 서버(ctx):
+    await ctx.send('``히트봇 공식 디스코드 서버 : https://discord.gg/2KbkbE9``') 
 
 access_token = os.environ["BOT_TOKEN"]
 bot.run(access_token)
