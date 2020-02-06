@@ -23,6 +23,8 @@ async def 명령어(ctx):
     embed.add_field(name='히트야', value='!히트야 - 히트가 랜덤으로 대답해줍니다.', inline=False)
     embed.add_field(name='패치노트', value='!패치노트 - 디스코드 히트봇 패치노트를 보여줍니다', inline=False)
     embed.add_field(name='문의', value='!문의 - 개발자의 연락처를 알려줍니다.', inline=False)
+    embed.add_field(name='시간', value='!시간 - 현재 시간을 알려줍니다.(한국 기준)', inline=False)
+    embed.add_field(name='날짜', value='!날짜 - 오늘 날짜를 알려줍니다.(한국 기준)', inline=False)
 
     embed.add_field(name='당근', value='!당근 - 당근이요.:carrot:당근.', inline=False)
     await ctx.send(embed=embed)
