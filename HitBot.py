@@ -72,7 +72,7 @@ async def 문의(ctx):
     await ctx.send('``디스코드 - 히트#0001``으로 문의/건의내용 DM으로 보내주세요') 
 @bot.command()
 async def 당근(ctx):
-    await ctx.send(':carrot:라드가 좋아하는 당근') 
+    await ctx.send(':carrot:당근당근당근') 
 @bot.command()
 async def 청소(ctx):
     varrr=message.ctx.split(' ')
