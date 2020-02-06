@@ -97,4 +97,4 @@ async def 시간(ctx):
         now.second
     ))
 
-bot.run('Njc0MjUyMDE0MjQyMjM0MzY5.XjvuXQ.3ke-_a4IBpPLeWvKqvbgx6pT2uw')
+bot.run('token')
