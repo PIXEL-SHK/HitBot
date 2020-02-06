@@ -4,6 +4,7 @@ from discord.ext import commands
 from discord.ext.commands import bot
 import random
 import datetime
+import os
 
 bot = commands.Bot(command_prefix='!')
 
@@ -97,4 +98,5 @@ async def 시간(ctx):
         now.second
     ))
 
-bot.run('token')
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
