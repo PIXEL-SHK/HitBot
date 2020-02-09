@@ -48,7 +48,7 @@ async def 히트야(ctx):
         elif rand==2:
             await ctx.send('자는중..:zzz:')
         elif rand==3:
-            await ctx.send('히트봇 사망')
+            await ctx.send('ctx.message.author.mention}부르지 마세여')
 @bot.command()
 async def 패치노트(ctx):
     embed = discord.Embed(colour = 0x00f000)
