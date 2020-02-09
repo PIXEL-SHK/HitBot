@@ -97,7 +97,7 @@ async def 서버(ctx):
     await ctx.send('``히트봇 공식 디스코드 서버 : https://discord.gg/2KbkbE9``') 
 @bot.command()
 async def 날씨(ctx):
-    await ctx.send('대한민국 실시간 날씨 조회 사이트 : https://www.weather.go.kr/w/index.do') 
+    await ctx.send('```대한민국 실시간 날씨 조회 사이트입니다```https://www.weather.go.kr/w/index.do') 
     
 access_token = os.environ["BOT_TOKEN"]
 bot.run(access_token)
