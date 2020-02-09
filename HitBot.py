@@ -14,7 +14,7 @@ async def on_ready():
 
 @bot.command()
 async def 핑(ctx):
-    await ctx.send('당신의 핑 정보 : {0}초'.format(bot.latency))  
+    await ctx.send('f{ctx.message.author.mention}님의 핑 정보 : {0}초'.format(bot.latency))  
 @bot.command()
 async def 명령어(ctx):
     embed = discord.Embed(colour = 0x00f000)
@@ -48,7 +48,7 @@ async def 히트야(ctx):
         elif rand==2:
             await ctx.send('자는중..:zzz:')
         elif rand==3:
-            await ctx.send('ctx.message.author.mention}부르지 마세여')
+            await ctx.send('부르지 마세여')
 @bot.command()
 async def 패치노트(ctx):
     embed = discord.Embed(colour = 0x00f000)
