@@ -98,9 +98,6 @@ async def 서버(ctx):
 @bot.command()
 async def 날씨(ctx):
     await ctx.send('```대한민국 실시간 날씨 조회 사이트입니다```https://www.weather.go.kr/w/index.do') 
-@bot.command()
-async def 날씨(ctx):
-    await ctx.send('``히트봇 오픈소스 링크`` : https://github.com/PIXEL-SHK/HitBot/edit/master/HitBot.py') 
     
 access_token = os.environ["BOT_TOKEN"]
 bot.run(access_token)
