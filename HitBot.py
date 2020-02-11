@@ -32,7 +32,7 @@ async def 명령어(ctx):
 @bot.event
 async def on_ready():
     while not bot.is_closed():
-        await bot.change_presence(activity=discord.Activity(name='!명령어', type=discord.ActivityType.playing))
+        await bot.change_presence(activity=discord.Activity(name='!명령어', type=discord.ActivityType.listening))
         await asyncio.sleep(5)
         await bot.change_presence(activity=discord.Activity(name='모든문의- 히트#0001', type=discord.ActivityType.playing))
         await asyncio.sleep(5)
