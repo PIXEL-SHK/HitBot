@@ -37,6 +37,7 @@ async def on_ready():
         await asyncio.sleep(5)
         await bot.change_presence(activity=discord.Activity(name='모든문의- 히트#0001', type=discord.ActivityType.playing))
         await asyncio.sleep(5)
+        await bot.change_presence(activity=discord.Activity(name='제작 - 히트', type=discord.ActivityType.streaming))
 @bot.command()
 async def 프로필(ctx, member: discord.Member):
     embed = discord.Embed(color = 0x00f000)
