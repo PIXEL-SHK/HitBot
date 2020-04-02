@@ -28,6 +28,7 @@ async def 명령어(ctx):
     embed.add_field(name='당근', value='!당근 - 귀여운 당근을 보여줍니다:carrot::carrot::carrot:', inline=False)
     embed.add_field(name='서버', value='!서버 - 히트봇 공식 디스코드 서버 초대 링크를 보내줍니다.', inline=False)
     embed.add_field(name='날씨', value='!날씨 - 대한민국 실시간 날씨 조회 사이트 링크를 보내줍니다.', inline=False)
+    embed.add_field(name='소스', value='!소스 - 히트봇 오픈소스를 보내줍니다.', inline=False)
     await ctx.send(embed=embed)
 @bot.event
 async def on_ready():
@@ -101,6 +102,9 @@ async def 날씨(ctx):
 @bot.command()
 async def 정보(ctx):
     await ctx.send('히트봇은 개발을 잠시 중단합니다.') 
+@bot.command()
+async def 소스(ctx):
+    await ctx.send('https://github.com/PIXEL-SHK/HitBot/blob/master/HitBot.py') 
 
 access_token = os.environ["BOT_TOKEN"]
 bot.run(access_token)
