@@ -106,6 +106,9 @@ async def 정보(ctx):
 @bot.command()
 async def 소스(ctx):
     await ctx.send('https://github.com/PIXEL-SHK/HitBot/blob/master/HitBot.py') 
+@bot.command()
+async def 나는(ctx):
+    await ctx.send('천재!!') 
 
 access_token = os.environ["BOT_TOKEN"]
 bot.run(access_token)
