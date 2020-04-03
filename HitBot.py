@@ -107,8 +107,8 @@ async def 정보(ctx):
 async def 소스(ctx):
     await ctx.send('https://github.com/PIXEL-SHK/HitBot/blob/master/HitBot.py') 
 @bot.command()
-async def 나는(ctx):
-    await ctx.send('천재!!') 
+async def 메론봇 어때(ctx):
+    await ctx.send('옆집에서 본거같은데 친하지는 않아욥') 
 
 access_token = os.environ["BOT_TOKEN"]
 bot.run(access_token)
