@@ -97,9 +97,6 @@ async def 서버(ctx):
 async def 날씨(ctx):
     await ctx.send('```대한민국 실시간 날씨 조회 사이트입니다```https://www.weather.go.kr/w/index.do') 
 @bot.command()
-async def 정보(ctx):
-    await ctx.send('히트봇은 개발을 잠시 중단합니다.') 
-@bot.command()
 async def 소스(ctx):
     await ctx.send('https://github.com/PIXEL-SHK/HitBot/blob/master/HitBot.py') 
 
